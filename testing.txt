@@ -3,5 +3,6 @@
 
 "base" "nutscript"
 "title" "testing"
+"maps" "^gm_"
 
 }
