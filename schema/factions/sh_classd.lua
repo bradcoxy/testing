@@ -7,3 +7,4 @@ FACTION.models = {
     "models/player/Group01/male_02.mdl",
 
 }
+

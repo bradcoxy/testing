@@ -28,6 +28,8 @@ function GM:PlayerLoadedChar(client, character, lastChar)
     PlayerInit(client)
 end
 
+
+--[[
 for i,v in pairs(player.GetAll()) do
 
     PlayerInit(v)
@@ -53,4 +55,17 @@ if (IsValid(zombie)) then
     zombie:Spawn()
 end
         end
+end
+]]
+
+-- Loop through all entities of a specific class (e.g., doors)
+for _, ent in pairs(ents.GetAll()) do
+    --print(ent:GetClass())
+    -- Check if the entity is a door (using its class)
+    if ent:GetClass() == "prop_door_rotating" then
+        -- Perform some action on the door
+        print("Found a door: " .. ent:GetName())
+        -- Example: You can manipulate the door here
+        -- ent:SetColor(Color(255, 0, 0)) -- Change color to red, for example
+    end
 end
