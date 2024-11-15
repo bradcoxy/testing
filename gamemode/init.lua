@@ -64,7 +64,8 @@ for _, ent in pairs(ents.GetAll()) do
     -- Check if the entity is a door (using its class)
     if ent:GetClass() == "prop_door_rotating" then
         -- Perform some action on the door
-        print("Found a door: " .. ent:GetName())
+        print("Found a Door!", ent:GetClass(), ent:GetPos())
+        
         -- Example: You can manipulate the door here
         -- ent:SetColor(Color(255, 0, 0)) -- Change color to red, for example
     end
