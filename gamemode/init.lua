@@ -8,10 +8,11 @@ function PlayerInit(client)
     
     local attribs = char:getAttribs()
     
-    local strength = attribs.str or char:getAttribs("Strength")
-    local endurance = attribs["end"] or char:getAttribs("Endurance")
-    local stamina = attribs.stm or char:getAttribs("Stamina")
-    
+    local strength = attribs.str or char:getAttribs("Strength") or 0 
+    local endurance = attribs["end"] or char:getAttribs("Endurance") or 0 
+    local stamina = attribs.stm or char:getAttribs("Stamina") 
+
+    print(strength)
     local defaultHealth = 100
     local defaultSpeed = 130
 
